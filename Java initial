@@ -1,0 +1,36 @@
+function draw() {
+inicializaCores();
+let maximo = width;
+let minimo = 0;
+let quantidade = map(mouseX, minimo, maximo, 1, palavra.length);
+//console.log(quantidade);
+let parcial = palavra.substring(0, quantidade);
+  function draw() {
+inicializaCores();
+let maximo = width;
+let minimo = 0;
+// mouseX, 0, width ==> 0, palavra.length
+let parcial = palavraParcial();
+text(parcial, 200, 200);
+}
+  function palavraParcial() {
+let quantidade = map(mouseX, 0, width, 1, palavra.length);
+//console.log(quantidade);
+let parcial = palavra.substring(0, quantidade);
+return parcial;
+}
+  function draw() {
+inicializaCores();
+let maximo = width;
+let minimo = 0;
+    function draw() {
+inicializaCores();
+let parcial = palavraParcial(0, width);
+text(parcial, 200, 200);
+}
+    function palavraParcial(minimo, maximo) {
+let quantidade = map(mouseX, minimo, maximo, 1, palavra.length);
+let parcial = palavra.substring(0, quantidade);
+return parcial;
+}
+    
